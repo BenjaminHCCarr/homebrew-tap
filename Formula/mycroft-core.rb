@@ -115,8 +115,8 @@ class MycroftCore < Formula
   end
 
   resource "pyowm" do
-    url "https://pypi.python.org/packages/76/73/2e0df8cc5ee67eefbe12069d1a20a72acfe1e061fa8ba43df08e7e924e2a/pyowm-2.2.1-py3.2.egg"
-    sha256 "50fc29d1266a4a9dce8d19b77599b21237fbb45ad9b3bf347346c58fb7ac6d15"
+    url "https://pypi.python.org/packages/2e/88/6a7efb243290f0b0529c442a367c45c6d6a75ae3efd40e920cfaac2d256a/pyowm-2.2.1.zip"
+    sha256 "c2852368d89cf5520de591e3f2213b78986e56f376d0d1fa0f0c94b45b3647c4"
   end
 
   resource "wolframalpha" do
