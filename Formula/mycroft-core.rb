@@ -60,8 +60,8 @@ class MycroftCore < Formula
   end
 
   resource "pyasn1" do
-    url "https://pypi.python.org/packages/d5/d5/3001949087690d4931e84b29789dc91c07e8d6ee6acab193ada3d566390f/pyasn1-0.1.9-py2.5.egg"
-    sha256 "1802a6dd32045e472a419db1441aecab469d33e0d2749e192abdec52101724af"
+    url "https://pypi.python.org/packages/f7/83/377e3dd2e95f9020dbd0dfd3c47aaa7deebe3c68d3857a4e51917146ae8b/pyasn1-0.1.9.tar.gz"
+    sha256 "853cacd96d1f701ddd67aa03ecc05f51890135b7262e922710112f12a2ed2a7f"
   end
 
   resource "gTTS" do
