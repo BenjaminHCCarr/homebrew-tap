@@ -70,8 +70,8 @@ class MycroftCore < Formula
   end
 
   resource "gTTS-token" do
-    url "null"
-    sha256 ""
+    url "https://pypi.python.org/packages/4c/c8/dd58eba1464729095217d3acfc4f6581348c6f495ea3342ed7dbc9f9e133/gTTS-token-1.1.1.zip"
+    sha256 "74badf3ba37773d8ba4a462a09b64de76a0ebd4015d667a6fdb041c2219283ef"
   end
 
   resource "backports.ssl-match-hostname" do
@@ -180,8 +180,8 @@ class MycroftCore < Formula
   end
 
   resource "netifaces" do
-    url "https://pypi.python.org/packages/ea/eb/f68ddd71593f9b10adbcd6c3e59f1eae058d5c9d6ef52256caf4830bdf71/netifaces-0.10.4-cp26-none-win_amd64.whl"
-    sha256 "99b0de2cf9644394d75d84b92e9a4961d76b30b33961cd1ed80faeb09be7195f"
+    url "https://pypi.python.org/packages/18/fa/dd13d4910aea339c0bb87d2b3838d8fd923c11869b1f6e741dbd0ff3bc00/netifaces-0.10.4.tar.gz"
+    sha256 "9656a169cb83da34d732b0eb72b39373d48774aee009a3d1272b7ea2ce109cde"
   end
 
   resource "pyjokes" do
@@ -190,8 +190,8 @@ class MycroftCore < Formula
   end
 
   resource "psutil" do
-    url "https://pypi.python.org/packages/b5/a5/cf96f9f13f9e20bdb4cd2ca1af2ddd74f76fea4bbfb8505c31a5900b38d2/psutil-4.1.0-cp26-none-win_amd64.whl"
-    sha256 "90b58cf88e80a4af52b79678df474679d231ed22200e6c25605a42ca71708a47"
+    url "https://pypi.python.org/packages/71/9b/6b6f630ad4262572839033b69905d415ef152d7701ef40aa98941ba75b38/psutil-4.1.0.tar.gz"
+    sha256 "c6abebec9c8833baaf1c51dd1b0259246d1d50b9b50e9a4aa66f33b1e98b8d17"
   end
 
   resource "pep8" do
@@ -205,8 +205,8 @@ class MycroftCore < Formula
   end
 
   resource "pocketsphinx" do
-    url "https://pypi.python.org/packages/86/71/442d44face1349cd4b71aab9ba8a786e64708d617126ca262702da3d04c7/pocketsphinx-0.1.0-cp27-cp27m-win_amd64.whl"
-    sha256 "1fae2207ff840ac89b7cb87798608dd716979f147986b42ab697aa48910baaa3"
+    url "https://pypi.python.org/packages/25/73/1d4f4734e2afe72bec6756853e7cdcffbb05115045fcea471224537243bd/pocketsphinx-0.1.0.tar.gz"
+    sha256 "2cc493ed48c1301e0d2e69b137dc646c2f8caca190ef4bce61836eac96d1796f"
   end
 
   resource "wifi" do
