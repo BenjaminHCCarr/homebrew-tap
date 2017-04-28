@@ -45,13 +45,13 @@ class MycroftCore < Formula
   end
 
   resource "requests" do
-    url "https://pypi.python.org/packages/bf/99/af6139323bac0ca0c6023eabbdc526579525f5584278d001dd2e169f8300/requests-2.12.5-py2.py3-none-any.whl"
-    sha256 "d57dae49f4267e8cb378aff9e426c9304a78794d03e945e39bfc607355715658"
+    url "https://pypi.python.org/packages/b6/61/7b374462d5b6b1d824977182db287758d549d8680444bad8d530195acba2/requests-2.12.5.tar.gz"
+    sha256 "d902a54f08d086a7cc6e58c20e2bb225b1ae82c19c35e5925269ee94fb9fce00"
   end
 
   resource "pyOpenSSL" do
-    url "https://pypi.python.org/packages/b1/4e/54c8995d2de887919272c2b711cd430277ec33e0f7bb88cb564244c102b6/pyOpenSSL-16.0.0-py2.py3-none-any.whl"
-    sha256 "5add70cf00273bf957ca31fdb0df9b0ae4639e081897d5f86a0ae1f104901230"
+    url "https://pypi.python.org/packages/77/f2/bccec75ca4280a9fa762a90a1b8b152a22eac5d9c726d7da1fcbfe0a20e6/pyOpenSSL-16.0.0.tar.gz"
+    sha256 "363d10ee43d062285facf4e465f4f5163f9f702f9134f0a5896f134cbb92d17d"
   end
 
   resource "ndg-httpsclient" do
@@ -60,8 +60,8 @@ class MycroftCore < Formula
   end
 
   resource "pyasn1" do
-    url "https://pypi.python.org/packages/48/2c/dce56c03cfe0500349e4cd1b778462f15b03615ce02d4ee7c7519c2108d1/pyasn1-0.1.9-py2.4.egg"
-    sha256 "61f9d99e3cef65feb1bfe3a2eef7a93eb93819d345bf54bcd42f4e63d5204dae"
+    url "https://pypi.python.org/packages/d5/d5/3001949087690d4931e84b29789dc91c07e8d6ee6acab193ada3d566390f/pyasn1-0.1.9-py2.5.egg"
+    sha256 "1802a6dd32045e472a419db1441aecab469d33e0d2749e192abdec52101724af"
   end
 
   resource "gTTS" do
@@ -70,8 +70,8 @@ class MycroftCore < Formula
   end
 
   resource "gTTS-token" do
-    url "https://pypi.python.org/packages/4c/c8/dd58eba1464729095217d3acfc4f6581348c6f495ea3342ed7dbc9f9e133/gTTS-token-1.1.1.zip"
-    sha256 "74badf3ba37773d8ba4a462a09b64de76a0ebd4015d667a6fdb041c2219283ef"
+    url "null"
+    sha256 ""
   end
 
   resource "backports.ssl-match-hostname" do
@@ -80,8 +80,8 @@ class MycroftCore < Formula
   end
 
   resource "certifi" do
-    url "https://pypi.python.org/packages/db/60/1ed0106bde7b14b363b15b17cc308aad93ba57d3582570f3ad7180ae0fae/certifi-2016.2.28-py2.py3-none-any.whl"
-    sha256 "75c33d546e0a732a4606749cbadcd81929f30d8b814061ca93cde49933dbb860"
+    url "https://pypi.python.org/packages/5c/f8/f6c54727c74579c6bbe5926f5deb9677c5810a33e11da58d1a4e2d09d041/certifi-2016.2.28.tar.gz"
+    sha256 "5e8eccf95924658c97b990b50552addb64f55e1e3dfe4880456ac1f287dc79d0"
   end
 
   resource "PyAudio" do
@@ -95,8 +95,8 @@ class MycroftCore < Formula
   end
 
   resource "SpeechRecognition" do
-    url "https://pypi.python.org/packages/59/cc/cccea33d41bbd71dd6eaf96d7bf82bfe39a39460f62dff8501b61a90f0b5/SpeechRecognition-3.1.3-py3-none-any.whl"
-    sha256 "7079e0524440275d1f86fdeead4f31659acfe061cb9ef1942db0125f7fafb22f"
+    url "https://pypi.python.org/packages/27/42/e2f59426317908b2c8ee393ae6b2815deada625ccebca00f71ee1fec46e3/SpeechRecognition-3.1.3.tar.gz"
+    sha256 "1f21af50e41f219f2c91edbf9e791a291c154b209ec2ddc261a3f76718e7bf50"
   end
 
   resource "tornado" do
@@ -115,18 +115,18 @@ class MycroftCore < Formula
   end
 
   resource "pyowm" do
-    url "https://pypi.python.org/packages/91/b4/84d7b9a86eb38d196359ce791204bae0faa8231a2ce8b6fd1269e4376b33/pyowm-2.2.1-py2.7.egg"
-    sha256 "7a79fb75ffab56003c63a593f2b10499cc85fbb433c3999d52d46b74de7c09ed"
+    url "https://pypi.python.org/packages/76/73/2e0df8cc5ee67eefbe12069d1a20a72acfe1e061fa8ba43df08e7e924e2a/pyowm-2.2.1-py3.2.egg"
+    sha256 "50fc29d1266a4a9dce8d19b77599b21237fbb45ad9b3bf347346c58fb7ac6d15"
   end
 
   resource "wolframalpha" do
-    url "https://pypi.python.org/packages/ff/55/7c062ac9f6b443c976e226393db5a9dd60f80bd64c32e5df52c9d3b9a327/wolframalpha-1.4-py2.py3-none-any.whl"
-    sha256 "29e04a1aa8470fb1cba65f3342e99a2d186351edaf0166e729b89064adef47f3"
+    url "https://pypi.python.org/packages/7c/d7/37cf54f3f252fb4db3f717b8fc0eebaf1dd66c9710950806a2d74976128f/wolframalpha-1.4.tar.gz"
+    sha256 "545e0978302e849f0ae69e8d571b56ff50d1dc3f515bebd66409fea90db88d5f"
   end
 
   resource "futures" do
-    url "https://pypi.python.org/packages/26/7d/a7e1130b63514cd7192f0ba0b53bdda7f96df88641ee0c97bfed8477f324/futures-3.0.3-py2-none-any.whl"
-    sha256 "04afa2a06ab7dcca9d81717b420a7a14826061e9b2614a5c77dd24c75ccf97e4"
+    url "https://pypi.python.org/packages/4c/dc/f9473006d4c9c52d4a4e977173fbcbfb1a8ef3a57e32e885edf994fd4a45/futures-3.0.3.tar.gz"
+    sha256 "2fe2342bb4fe8b8e217f0d21b5921cbe5408bf966d9f92025e707e881b198bed"
   end
 
   resource "requests-futures" do
@@ -135,8 +135,8 @@ class MycroftCore < Formula
   end
 
   resource "astral" do
-    url "https://pypi.python.org/packages/20/65/afe2cf1208ea9d6cb3fa75bf93d3dbf002822d6085378f8c22fe0c9a6a0e/astral-0.9-py2.py3-none-any.whl"
-    sha256 "3903bcbdbdbcc5412467275448f900106debb89e447a479f834b4590d116025d"
+    url "https://pypi.python.org/packages/1e/6e/3b73951a64757b7b445e698dec5db1db67e72b732956b7183310973f3046/astral-0.9.zip"
+    sha256 "9f838acba36f478f5e64f0d3f09a32688d4e3cbbf8007225c790768eb0c728ef"
   end
 
   resource "tzlocal" do
@@ -145,8 +145,8 @@ class MycroftCore < Formula
   end
 
   resource "parsedatetime" do
-    url "https://pypi.python.org/packages/ba/d8/6dbf446399124324606d1ed397a23b31df8fca2a1740cb356ffe0e560300/parsedatetime-1.5-py2-none-any.whl"
-    sha256 "3a74f100f90d65918315fe6490771ad208bc3f13afd32d35fcfe4e8d0b3b812b"
+    url "https://pypi.python.org/packages/f7/e8/5fa5dd8643cd9c75d2823faf7e07657d3b440cb446c872ec71e48c813cc8/parsedatetime-1.5.tar.gz"
+    sha256 "3da6be2be506f59cce32e19e30e201053e1bb4d07e25668918e00f8a49ad40ab"
   end
 
   resource "pdoc" do
@@ -160,8 +160,8 @@ class MycroftCore < Formula
   end
 
   resource "feedparser" do
-    url "https://pypi.python.org/packages/91/d8/7d37fec71ff7c9dbcdd80d2b48bcdd86d6af502156fc93846fb0102cb2c4/feedparser-5.2.1.tar.bz2"
-    sha256 "ce875495c90ebd74b179855449040003a1beb40cd13d5f037a0654251e260b02"
+    url "https://pypi.python.org/packages/ca/f4/91a056f11751701c24f86c692d92fee290b0ba3f99f657cdeb85ad3da402/feedparser-5.2.1.tar.gz"
+    sha256 "bd030652c2d08532c034c27fcd7c85868e7fa3cb2b17f230a44a6bbc92519bf9"
   end
 
   resource "pyalsaaudio" do
@@ -180,23 +180,23 @@ class MycroftCore < Formula
   end
 
   resource "netifaces" do
-    url "https://pypi.python.org/packages/bc/7c/a4b071ce6fe8ae228414d8be62f80e2a8f8c9203b6a6b0c62b2eb16181a7/netifaces-0.10.4-cp26-none-win32.whl"
-    sha256 "112ee5b5a38e731ba39f3203a62796ebb7e234e976cba76b664535096078a6a2"
+    url "https://pypi.python.org/packages/ea/eb/f68ddd71593f9b10adbcd6c3e59f1eae058d5c9d6ef52256caf4830bdf71/netifaces-0.10.4-cp26-none-win_amd64.whl"
+    sha256 "99b0de2cf9644394d75d84b92e9a4961d76b30b33961cd1ed80faeb09be7195f"
   end
 
   resource "pyjokes" do
-    url "https://pypi.python.org/packages/a0/70/65457d1b197b1a0195a95128632d9a0b59d7d8ced6035c80e8467731dc76/pyjokes-0.5.0-py2.py3-none-any.whl"
-    sha256 "01b90474d5c889c21cae88f0d5fc8db1334b2891a16df75cbf9a0886bfdea653"
+    url "https://pypi.python.org/packages/b4/62/79a5aa98d2db64eb4925e7ae7b9de1fa9f2e78050b5410a69371ba13a86f/pyjokes-0.5.0.tar.gz"
+    sha256 "745299c99b7a4015251b4876ecd59dd62803f458a9f0540d036f0f6627dcc67e"
   end
 
   resource "psutil" do
-    url "https://pypi.python.org/packages/77/04/d5a92cb5c0e79b84294f6c99b9725806921d1d88032e9d056ca8a7ba31c1/psutil-4.1.0-cp26-none-win32.whl"
-    sha256 "13aed96ad945db5c6b3d5fbe92be65330a3f2f757a300c7d1578a16efa0ece7f"
+    url "https://pypi.python.org/packages/b5/a5/cf96f9f13f9e20bdb4cd2ca1af2ddd74f76fea4bbfb8505c31a5900b38d2/psutil-4.1.0-cp26-none-win_amd64.whl"
+    sha256 "90b58cf88e80a4af52b79678df474679d231ed22200e6c25605a42ca71708a47"
   end
 
   resource "pep8" do
-    url "https://pypi.python.org/packages/8a/cb/7d0fdca7e03f997945fb1bd60a8ddfea5c51229b865c470b4f7a64619d20/pep8-1.7.0-py2.py3-none-any.whl"
-    sha256 "4fc2e478addcf17016657dff30b2d8d611e8341fac19ccf2768802f6635d7b8a"
+    url "https://pypi.python.org/packages/3e/b5/1f717b85fbf5d43d81e3c603a7a2f64c9f1dabc69a1e7745bd394cc06404/pep8-1.7.0.tar.gz"
+    sha256 "a113d5f5ad7a7abacef9df5ec3f2af23a20a28005921577b15dd584d099d5900"
   end
 
   resource "multi_key_dict" do
@@ -205,8 +205,8 @@ class MycroftCore < Formula
   end
 
   resource "pocketsphinx" do
-    url "https://pypi.python.org/packages/c3/83/2ef97583d8dd8c23448cff9cae22279fbf9e871ee522a72b776e09810827/pocketsphinx-0.1.0-cp27-cp27m-win32.whl"
-    sha256 "36cdc1b1f2195541668d7d3dbd325e250119c6836db0aa7f1cb6d00ce79d59e8"
+    url "https://pypi.python.org/packages/86/71/442d44face1349cd4b71aab9ba8a786e64708d617126ca262702da3d04c7/pocketsphinx-0.1.0-cp27-cp27m-win_amd64.whl"
+    sha256 "1fae2207ff840ac89b7cb87798608dd716979f147986b42ab697aa48910baaa3"
   end
 
   resource "wifi" do
