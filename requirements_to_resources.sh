@@ -19,6 +19,12 @@ for line in $filelines ; do
     echo "package is $py_pkg pinned at $py_pkg_ver"
     py_url=`curl http://pypi.python.org/pypi/$py_pkg/json -L -s | jq ".releases[\"$py_pkg_ver\"][0].url" | sed 's/"//g'`
     echo "the URL is $py_url"
+    # need to add logicals for zip as well; then iterate from 0++
+    # until you get a gz or zip file
+    if [[ ! "$py_url" =~ \.t?gz$ ]]; then
+      py_url=`curl http://pypi.python.org/pypi/$py_pkg/json -L -s | jq ".releases[\"$py_pkg_ver\"][1].url" | sed 's/"//g'`
+      echo "the URL is $py_url"
+    fi
     `/usr/local/opt/curl/bin/curl -s -C - -O -k $py_url`
     download=`echo $py_url | (awk -F '/' '{print $NF}')`
     download_sha256=`shasum -a 256 $download | (awk -F ' *' '{print $1}')`
