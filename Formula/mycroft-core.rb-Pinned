@@ -21,7 +21,6 @@ class MycroftCore < Formula
   depends_on "mpg123"
   depends_on "openssl"
   depends_on "portaudio"
-  depends_on "pulseaudio"
   depends_on "s3cmd"
 
   # As requirements.txt is not handled, converted to resources
@@ -135,9 +134,9 @@ class MycroftCore < Formula
     sha256 "33aa8a3b7892850701707d7e094b1e1ce7c4f7a36ff2a1dcc2da4e01a1a00f7e"
   end
 
-  resource "pytz" do
-  url "https://pypi.python.org/packages/a4/09/c47e57fc9c7062b4e83b075d418800d322caa87ec0ac21e6308bd3a2d519/pytz-2017.2.zip#md5=f89bde8a811c8a1a5bac17eaaa94383c"
-  sha256 "f5c056e8f62d45ba8215e5cb8f50dfccb198b4b9fbea8500674f3443e4689589"
+  resource "astral" do
+    url "https://pypi.python.org/packages/1e/6e/3b73951a64757b7b445e698dec5db1db67e72b732956b7183310973f3046/astral-0.9.zip"
+    sha256 "9f838acba36f478f5e64f0d3f09a32688d4e3cbbf8007225c790768eb0c728ef"
   end
 
   resource "tzlocal" do
@@ -148,11 +147,6 @@ class MycroftCore < Formula
   resource "parsedatetime" do
     url "https://pypi.python.org/packages/f7/e8/5fa5dd8643cd9c75d2823faf7e07657d3b440cb446c872ec71e48c813cc8/parsedatetime-1.5.tar.gz"
     sha256 "3da6be2be506f59cce32e19e30e201053e1bb4d07e25668918e00f8a49ad40ab"
-  end
-
-  resource "astral" do
-    url "https://pypi.python.org/packages/a4/d6/c309f266677372964c6002a56a7bec2a90875338a71325e20b24d6d1e187/astral-1.4.zip"
-    sha256 "e7f2c825ac101c0953812e0f4c617ca48bd9dd5f4ebf450f7ce9086ed8f5a1fe"
   end
 
   resource "pdoc" do
@@ -170,14 +164,9 @@ class MycroftCore < Formula
     sha256 "bd030652c2d08532c034c27fcd7c85868e7fa3cb2b17f230a44a6bbc92519bf9"
   end
 
-  # resource "pyalsaaudio" do
-  #   url "https://pypi.python.org/packages/52/b6/44871791929d9d7e11325af0b7be711388dfeeab17147988f044a41a6d83/pyalsaaudio-0.8.4.tar.gz"
-  #   sha256 "84e8f8da544d7f4bd96479ce4a237600077984d9be1d7f16c1d9a492ecf50085"
-  # end
-
-  resource "pulsectl" do
-    url "https://pypi.python.org/packages/2b/25/522767df79458d0bd5c357ef2190caab657cd5ccd88404a9977f66de2f4b/pulsectl-17.1.3.tar.gz"
-    sha256 "21a74ae064a1ee48c6b276ca2c5069154c1766ccd5166d41c1b2ce93971468fe"
+  resource "pyalsaaudio" do
+    url "https://pypi.python.org/packages/0d/99/1f48912b5ffccecdd0c0c477023f4eaf45ebac6c92bc1865c7142c570d6d/pyalsaaudio-0.8.2.tar.gz"
+    sha256 "b6df486f1c4035041a5f3800496b86c64e48e4a7d47f94dcbca11b0187aa3a15"
   end
 
   resource "xmlrunner" do
