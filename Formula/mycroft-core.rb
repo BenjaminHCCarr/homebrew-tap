@@ -136,8 +136,8 @@ class MycroftCore < Formula
   end
 
   resource "pytz" do
-  url "https://pypi.python.org/packages/a4/09/c47e57fc9c7062b4e83b075d418800d322caa87ec0ac21e6308bd3a2d519/pytz-2017.2.zip#md5=f89bde8a811c8a1a5bac17eaaa94383c"
-  sha256 "f5c056e8f62d45ba8215e5cb8f50dfccb198b4b9fbea8500674f3443e4689589"
+    url "https://pypi.python.org/packages/a4/09/c47e57fc9c7062b4e83b075d418800d322caa87ec0ac21e6308bd3a2d519/pytz-2017.2.zip#md5=f89bde8a811c8a1a5bac17eaaa94383c"
+    sha256 "f5c056e8f62d45ba8215e5cb8f50dfccb198b4b9fbea8500674f3443e4689589"
   end
 
   resource "tzlocal" do
@@ -220,10 +220,10 @@ class MycroftCore < Formula
     sha256 "2cc493ed48c1301e0d2e69b137dc646c2f8caca190ef4bce61836eac96d1796f"
   end
 
-  resource "wifi" do
-    url "https://pypi.python.org/packages/fe/a9/d026afe8a400dd40122385cd690e4fff4d574ed16f5c3a0f5e3921bfd383/wifi-0.3.8.tar.gz"
-    sha256 "a9880b2e91ea8420154c6826c8112a2f541bbae5641d59c5cb031d27138d7f26"
-  end
+  # resource "wifi" do
+  #   url "https://pypi.python.org/packages/fe/a9/d026afe8a400dd40122385cd690e4fff4d574ed16f5c3a0f5e3921bfd383/wifi-0.3.8.tar.gz"
+  #   sha256 "a9880b2e91ea8420154c6826c8112a2f541bbae5641d59c5cb031d27138d7f26"
+  # end
 
   resource "pyroute2" do
     url "https://pypi.python.org/packages/b1/48/c5de65e3f8bb8bdb1873167838ddc8d8545a7bd825bdc8031d474768eeed/pyroute2-0.4.5.tar.gz"
@@ -246,7 +246,12 @@ class MycroftCore < Formula
   end
 
   def install
+    inreplace "mycroft-base-setup.py", "'wifi'", ""
+    inreplace "mycroft-base-setup.py", "'mycroft-wifi-setup-client=mycroft.client.wifisetup.main:main',", ""
     system "cp", "mycroft-base-setup.py", "setup.py"
+    inreplace "requirements.txt", "wifi==0.3.8", ""
+    inreplace "requirements.txt", "astral==0.9", "astral==1.4"
+    inreplace "requirements.txt", "pyalsaaudio==0.8.2", "pulsectl==17.1.3"
     virtualenv_install_with_resources
   end
   test do
