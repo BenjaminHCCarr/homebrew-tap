@@ -155,6 +155,11 @@ class MycroftCore < Formula
     sha256 "e7f2c825ac101c0953812e0f4c617ca48bd9dd5f4ebf450f7ce9086ed8f5a1fe"
   end
 
+  resource "markdown" do
+    url "https://pypi.python.org/packages/source/M/Markdown/Markdown-2.4.1.tar.gz"
+    sha256 "812ec5249f45edc31330b7fb06e52aaf6ab2d83aa27047df7cb6837ef2d269b6"
+  end
+
   resource "pdoc" do
     url "https://pypi.python.org/packages/d5/5a/f3951d743392004847d6fbf11f0159ac75674f69ed4578716d77c2a7f74f/pdoc-0.3.2.tar.gz"
     sha256 "7835909580d5a14a06bd3de4416cf17f86a146ecb12eeb5cd83d9a93d03e6d27"
