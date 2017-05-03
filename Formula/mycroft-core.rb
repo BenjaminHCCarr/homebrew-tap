@@ -265,10 +265,10 @@ class MycroftCore < Formula
     sha256 "bd030652c2d08532c034c27fcd7c85868e7fa3cb2b17f230a44a6bbc92519bf9"
   end
 
-  resource "pyalsaaudio" do
-    url "https://pypi.python.org/packages/52/b6/44871791929d9d7e11325af0b7be711388dfeeab17147988f044a41a6d83/pyalsaaudio-0.8.4.tar.gz"
-    sha256 "84e8f8da544d7f4bd96479ce4a237600077984d9be1d7f16c1d9a492ecf50085"
-  end
+  # resource "pyalsaaudio" do
+  #   url "https://pypi.python.org/packages/52/b6/44871791929d9d7e11325af0b7be711388dfeeab17147988f044a41a6d83/pyalsaaudio-0.8.4.tar.gz"
+  #   sha256 "84e8f8da544d7f4bd96479ce4a237600077984d9be1d7f16c1d9a492ecf50085"
+  # end
 
   resource "pulsectl" do
     url "https://pypi.python.org/packages/2b/25/522767df79458d0bd5c357ef2190caab657cd5ccd88404a9977f66de2f4b/pulsectl-17.1.3.tar.gz"
