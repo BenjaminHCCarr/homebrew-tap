@@ -185,6 +185,11 @@ class MycroftCore < Formula
     sha256 "8ad8c4783bf61ded74527bffb48ed9b54166685e4230386a9ed9b1279e2df5b1"
   end
 
+  resource "idna" do
+    url "https://pypi.python.org/packages/d8/82/28a51052215014efc07feac7330ed758702fc0581347098a81699b5281cb/idna-2.5.tar.gz"
+    sha256 "3cb5ce08046c4e3a560fc02f138d0ac63e00f8ce5901a56b32ec8b7994082aab"
+  end
+
   resource "inflection" do
     url "https://pypi.python.org/packages/d5/35/a6eb45b4e2356fe688b21570864d4aa0d0a880ce387defe9c589112077f8/inflection-0.3.1.tar.gz"
     sha256 "18ea7fb7a7d152853386523def08736aa8c32636b047ade55f7578c4edeb16ca"
@@ -258,6 +263,11 @@ class MycroftCore < Formula
   resource "feedparser" do
     url "https://pypi.python.org/packages/ca/f4/91a056f11751701c24f86c692d92fee290b0ba3f99f657cdeb85ad3da402/feedparser-5.2.1.tar.gz"
     sha256 "bd030652c2d08532c034c27fcd7c85868e7fa3cb2b17f230a44a6bbc92519bf9"
+  end
+
+  resource "pyalsaaudio" do
+    url "https://pypi.python.org/packages/52/b6/44871791929d9d7e11325af0b7be711388dfeeab17147988f044a41a6d83/pyalsaaudio-0.8.4.tar.gz"
+    sha256 "84e8f8da544d7f4bd96479ce4a237600077984d9be1d7f16c1d9a492ecf50085"
   end
 
   resource "pulsectl" do
@@ -337,6 +347,7 @@ class MycroftCore < Formula
     inreplace "requirements.txt", "wifi==0.3.8", ""
     inreplace "requirements.txt", "astral==0.9", "astral==1.4"
     inreplace "requirements.txt", "pyalsaaudio==0.8.2", "pulsectl==17.1.3"
+    inreplace "mycroft/client/enclosure/__init__.py", "alsaaudio", "pulsectl"
     virtualenv_install_with_resources
   end
   test do
