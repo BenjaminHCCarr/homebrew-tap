@@ -96,8 +96,8 @@ class MycroftCore < Formula
   end
 
   resource "SpeechRecognition" do
-    url "https://pypi.python.org/packages/27/42/e2f59426317908b2c8ee393ae6b2815deada625ccebca00f71ee1fec46e3/SpeechRecognition-3.1.3.tar.gz"
-    sha256 "1f21af50e41f219f2c91edbf9e791a291c154b209ec2ddc261a3f76718e7bf50"
+    url "https://pypi.python.org/packages/ce/0f/e14418e1797e3b6326618b3b4d1940734ed55878df64812784a7b6168eb5/SpeechRecognition-3.6.0.tar.gz"
+    sha256 "22391df1c5e2b4d9b9ac423e4fa29b96c99f83142fc4d06d627c0af67f4f67d7"
   end
 
   resource "tornado" do
