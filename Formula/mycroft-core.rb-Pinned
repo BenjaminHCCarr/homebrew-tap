@@ -45,13 +45,13 @@ class MycroftCore < Formula
   end
 
   resource "requests" do
-    url "https://pypi.python.org/packages/b6/61/7b374462d5b6b1d824977182db287758d549d8680444bad8d530195acba2/requests-2.12.5.tar.gz"
-    sha256 "d902a54f08d086a7cc6e58c20e2bb225b1ae82c19c35e5925269ee94fb9fce00"
+    url "https://pypi.python.org/packages/27/c7/a45641c83c6e28f4922ba6af3d4ae4d79b41932c2f3d77fed9e0bf878149/requests-2.17.3.tar.gz"
+    sha256 "8d29f97ed1541709b57caddb77bb20592411d7ca10ec4f03275f49ee8456e225"
   end
 
   resource "pyOpenSSL" do
-    url "https://pypi.python.org/packages/77/f2/bccec75ca4280a9fa762a90a1b8b152a22eac5d9c726d7da1fcbfe0a20e6/pyOpenSSL-16.0.0.tar.gz"
-    sha256 "363d10ee43d062285facf4e465f4f5163f9f702f9134f0a5896f134cbb92d17d"
+    url "https://pypi.python.org/packages/9f/32/80fe4fddeb731b7766cd09fe0b2032a91b43dae655e216792af2a6ae3190/pyOpenSSL-17.0.0.tar.gz"
+    sha256 "48abfe9d2bb8eb8d8947c8452b0223b7b1be2383b332f3b4f248fe59ef0bafdd"
   end
 
   resource "ndg-httpsclient" do
@@ -65,8 +65,8 @@ class MycroftCore < Formula
   end
 
   resource "gTTS" do
-    url "https://pypi.python.org/packages/9d/7d/ae1af3b5e4912a630d7aae23c43577799cf49cddd0f5a00a33791d414c2d/gTTS-1.1.7.tar.gz"
-    sha256 "124dfc447056cc622989319ebb553d56cfd5c197c345cee3397b675a6da84f58"
+    url "https://pypi.python.org/packages/98/7e/14aa52d972ede7c884d1339bc2803c620c7f411578098c823d49269e8a8f/gTTS-1.2.0.tar.gz"
+    sha256 "49a2423c9c38facc15b715f41f28875af78de2713c2616c8dd026201b8955ac0"
   end
 
   resource "gTTS-token" do
@@ -80,13 +80,13 @@ class MycroftCore < Formula
   end
 
   resource "certifi" do
-    url "https://pypi.python.org/packages/5c/f8/f6c54727c74579c6bbe5926f5deb9677c5810a33e11da58d1a4e2d09d041/certifi-2016.2.28.tar.gz"
-    sha256 "5e8eccf95924658c97b990b50552addb64f55e1e3dfe4880456ac1f287dc79d0"
+    url "https://pypi.python.org/packages/dd/0e/1e3b58c861d40a9ca2d7ea4ccf47271d4456ae4294c5998ad817bd1b4396/certifi-2017.4.17.tar.gz"
+    sha256 "f7527ebf7461582ce95f7a9e03dd141ce810d40590834f4ec20cddd54234c10a"
   end
 
   resource "PyAudio" do
-    url "https://pypi.python.org/packages/06/d1/3d202c9187fb78ad6d4f8b476a8cc0ded7c1b47ca33d5dab73b959faf123/pyaudio-0.2.8.tar.gz"
-    sha256 "4f85367cf79657616684487037957ac38582ecc5389b89420fe61d901b719551"
+    url "https://pypi.python.org/packages/ab/42/b4f04721c5c5bfc196ce156b3c768998ef8c0ae3654ed29ea5020c749a6b/PyAudio-0.2.11.tar.gz"
+    sha256 "93bfde30e0b64e63a46f2fd77e85c41fd51182a4a3413d9edfaf9ffaa26efb74"
   end
 
   resource "pyee" do
@@ -100,8 +100,8 @@ class MycroftCore < Formula
   end
 
   resource "tornado" do
-    url "https://pypi.python.org/packages/ec/af/c40ad78dacdef134f3e08b3103c3c859b14ceb9639d344811339227b6444/tornado-4.2.1.tar.gz"
-    sha256 "a16fcdc4f76b184cb82f4f9eaeeacef6113b524b26a2cb331222e4a7fa6f2969"
+    url "https://pypi.python.org/packages/df/42/a180ee540e12e2ec1007ac82a42b09dd92e5461e09c98bf465e98646d187/tornado-4.5.1.tar.gz"
+    sha256 "db0904a28253cfe53e7dedc765c71596f3c53bb8a866ae50123320ec1a7b73fd"
   end
 
   resource "websocket-client" do
@@ -205,8 +205,8 @@ class MycroftCore < Formula
   end
 
   resource "pocketsphinx" do
-    url "https://pypi.python.org/packages/25/73/1d4f4734e2afe72bec6756853e7cdcffbb05115045fcea471224537243bd/pocketsphinx-0.1.0.tar.gz"
-    sha256 "2cc493ed48c1301e0d2e69b137dc646c2f8caca190ef4bce61836eac96d1796f"
+    url "https://pypi.python.org/packages/a0/4e/70c500da7558d2a8e67fd8cfd33f5a4b90faf7163d7e4023fa989a89902a/pocketsphinx-0.1.3.tar.gz"
+    sha256 "ac125aadefc85ab78706a4d18ae66c3dcf89eb9e2a0cbd88c7a6086df420346d"
   end
 
   resource "wifi" do
@@ -215,8 +215,8 @@ class MycroftCore < Formula
   end
 
   resource "pyroute2" do
-    url "https://pypi.python.org/packages/b1/48/c5de65e3f8bb8bdb1873167838ddc8d8545a7bd825bdc8031d474768eeed/pyroute2-0.4.5.tar.gz"
-    sha256 "d80c83fcbb6385bf126d69345cabce01d0fbb870b6ad46dd4583e6c54e775061"
+    url "https://pypi.python.org/packages/0a/b1/987345ef81de7f0670cff0bf207f4b1e6a11d6f090b704cbda4ade119976/pyroute2-0.4.15.tar.gz"
+    sha256 "273530e78261ac5e9e2985f12fad9e6c4231f8e49b8c285c05a23dcda5afce58"
   end
 
   resource "urllib5" do
