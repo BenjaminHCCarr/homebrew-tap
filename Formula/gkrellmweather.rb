@@ -6,8 +6,8 @@ class Gkrellmweather < Formula
 
   depends_on "gkrellm"
   depends_on "wget"
-  depends_on "glib-2" => :build
-  depends_on "gtk-2"  => :build
+  depends_on "glib" => :build
+  depends_on "gtk"  => :build
 
   def install
     system "make", "INSTALLROOT=#{prefix}"
