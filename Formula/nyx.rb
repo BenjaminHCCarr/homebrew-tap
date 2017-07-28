@@ -7,6 +7,8 @@ class Nyx < Formula
   bottle :unneeded
   depends_on "automake" => :build
   depends_on "autoconf" => :build
+  depends_on "ncurses"
+  depends_on "tor"
 
   resource "stem" do
     url "https://pypi.python.org/packages/b3/4e/fc6bb6262fa9ca1b308aa735fc2186586106cef0cb4b4ba80aaaa3c9a071/stem-1.5.4.tar.gz"
