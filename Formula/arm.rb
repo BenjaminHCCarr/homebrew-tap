@@ -21,13 +21,7 @@ class Arm < Formula
 
   def install
     libexec.install Dir["*"]
-    if build.head?
-      alias libexec/"run_nyx" libexec/"arm"
-      :install_symlink_p libexec/"run_nyx" libexec/"arm"
-      install_symlink libexec/"run_nyx" libexec/"arm"
-      install_symlink_p libexec/"run_nyx" libexec/"arm"
-      symlink libexec/"run_nyx" libexec/"arm"
-    end
+    libexec.install_symlink "run_nyx" => "arm" if build.head?
     bin.write_exec_script libexec/"arm"
   end
 
