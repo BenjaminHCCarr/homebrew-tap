@@ -7,7 +7,7 @@ class Arm < Formula
 
   bottle :unneeded
 
-  depends_on :python
+  depends_on "python"
   depends_on "tor"
 
   resource "stem" do
@@ -21,14 +21,17 @@ class Arm < Formula
 
   def install
     libexec.install Dir["*"]
-    libexec.install_symlink "run_nyx" => "arm" if build.head?
+    if build.head?
+      inreplace "#{libexec}/run_nyx", "env python", "env python2.7"
+      libexec.install_symlink "run_nyx" => "arm"
+    end
     bin.write_exec_script libexec/"arm"
   end
 
   def caveats; <<-EOS.undent
     You'll need to enable the Tor Control Protocol in your torrc.
     See here for details: https://www.torproject.org/tor-manual.html.en
-
+    
     To configure Arm, copy the sample configuration from
     #{opt_libexec}/armrc.sample
     to ~/.arm/armrc, adjusting as needed.
