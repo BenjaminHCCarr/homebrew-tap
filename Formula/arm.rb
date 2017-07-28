@@ -16,12 +16,18 @@ class Arm < Formula
   end
 
   head do
-    head "https://git.torproject.org/nyx.git", :branch => "master"
-
+    url "https://git.torproject.org/nyx.git", :branch => "master", :shallow => true
   end
 
   def install
     libexec.install Dir["*"]
+    if build.head?
+      alias libexec/"run_nyx" libexec/"arm"
+      :install_symlink_p libexec/"run_nyx" libexec/"arm"
+      install_symlink libexec/"run_nyx" libexec/"arm"
+      install_symlink_p libexec/"run_nyx" libexec/"arm"
+      symlink libexec/"run_nyx" libexec/"arm"
+    end
     bin.write_exec_script libexec/"arm"
   end
 
