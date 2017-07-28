@@ -1,13 +1,16 @@
 class Nyx < Formula
   desc "Terminal status monitor for Tor"
   homepage "https://www.atagar.com/arm/"
-  url "https://git.torproject.org/nyx.git"
-  sha256
+  # url "https://git.torproject.org/nyx.git", :branch => "master"
+  head "https://git.torproject.org/nyx.git", :branch => "master"
+  # sha256 :no_check
 
-  bottle :unneeded
-  depends_on "automake" => :build
-  depends_on "autoconf" => :build
-  depends_on "ncurses"
+  # bottle :unneeded
+  # depends_on "automake" => :build
+  # depends_on "autoconf" => :build
+  # depends_on "ncurses"
+
+  depends_on :python
   depends_on "tor"
 
   resource "stem" do
