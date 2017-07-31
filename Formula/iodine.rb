@@ -11,12 +11,6 @@ class Iodine < Formula
     depends_on :tuntap
   end
 
-  bottle do
-    cellar :any_skip_relocation
-    revision 2
-    sha256 "0eec156b89c9bc7b9f13e9865b4e119fe5c744dfe9d5f207e444f79b87bee214" => :mavericks
-  end
-
   def install
     system "make", "install", "prefix=#{prefix}"
   end
