@@ -10,16 +10,16 @@ class Procfs < Formula
   depends_on "pcre"
   depends_on :osxfuse
 
-
   def install
-      system "make"
-      #system "make", "install"
-    end
+    inreplace "Makefile", "MacOSX10.11.sdk", "MacOSX.sdk"
+    ENV.append_to_cflags "-I#{HOMEBREW_PREFIX}/include -L#{HOMEBREW_PREFIX}/lib"
+    system "make"
+    # system "make", "install"
   end
 
   test do
     # Functional test violates sandboxing, so punt.
     # Issue #50602; upstream issue vgough/encfs#151
-    #assert_match version.to_s, shell_output("#{bin}/encfs 2>&1", 1)
+    # assert_match version.to_s, shell_output("#{bin}/encfs 2>&1", 1)
   end
 end
