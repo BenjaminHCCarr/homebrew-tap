@@ -15,6 +15,11 @@ class Arm < Formula
     sha256 "3649133037ee186e80115650094a2fb2f60a23f006ebddab34d9039be9b2f7c8"
   end
 
+  resource "stat" do
+    url "https://pypi.python.org/packages/5b/9c/90f80cad031edc12bd003cb567e45f035dcf6aa2c29578b98a3acd62e3a3/Stat-0.5.tar.gz"
+    sha256 "c5720e9106cf7bbf8737b39403f05277af258a3f9b65015a2c3ab3f5d2be8e93"
+  end
+
   head do
     url "https://git.torproject.org/nyx.git", :branch => "master", :shallow => true
   end
@@ -31,7 +36,7 @@ class Arm < Formula
   def caveats; <<-EOS.undent
     You'll need to enable the Tor Control Protocol in your torrc.
     See here for details: https://www.torproject.org/tor-manual.html.en
-    
+
     To configure Arm, copy the sample configuration from
     #{opt_libexec}/armrc.sample
     to ~/.arm/armrc, adjusting as needed.
