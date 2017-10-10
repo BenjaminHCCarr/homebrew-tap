@@ -24,8 +24,6 @@ class Toralpha < Formula
       --with-openssl-dir=#{Formula["openssl"].opt_prefix}
     ]
 
-    args << "--disable-libscrypt" if build.without? "libscrypt"
-
     system "./configure", *args
     system "make", "install"
   end
@@ -63,5 +61,10 @@ class Toralpha < Formula
     assert_predicate testpath/"authority_certificate", :exist?
     assert_predicate testpath/"authority_signing_key", :exist?
     assert_predicate testpath/"authority_identity_key", :exist?
+  end
+
+  def caveats; <<-EOS.undent
+    This is tracking -alpha, you should not use this if you don't know what you are doing with Tor. This is to help the Tor team test new features like scheduling.
+    EOS
   end
 end
