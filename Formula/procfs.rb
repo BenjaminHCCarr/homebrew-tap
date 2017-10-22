@@ -1,5 +1,5 @@
 class Procfs < Formula
-  desc "/proc for macOS/OS X 64-bitthrough FUSE file system"
+  desc "/proc for macOS/OS X 64-bit through FUSE file system"
   homepage "https://github.com/BenjaminHCCarr/procfs"
   url "https://github.com/BenjaminHCCarr/procfs/archive/v0.0.1.tar.gz"
   sha256 "e63d29a050d2e96a6eab8b460b43167b3e350501970ccc38183b05167aa2c757"

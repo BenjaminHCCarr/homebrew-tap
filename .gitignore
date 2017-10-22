@@ -1,4 +1,7 @@
 # toplevel
+/requirements.txt
+/resources.txt
+#above needed as I change often to make formula with python requirements
 /.bundle/
 /bin/
 /vendor/

@@ -28,8 +28,8 @@ class Nyx < Formula
     See here for details: https://www.torproject.org/tor-manual.html.en
 
     To configure Arm, copy the sample configuration from
-    #{opt_libexec}/armrc.sample
-    to ~/.arm/armrc, adjusting as needed.
+    #{opt_libexec}/nyxrc.sample
+    to ~/.nyx/nyxrc, adjusting as needed.
     EOS
   end
 end
