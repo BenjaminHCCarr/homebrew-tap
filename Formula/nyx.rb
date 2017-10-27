@@ -5,11 +5,8 @@ class Nyx < Formula
   head "https://git.torproject.org/nyx.git", :branch => "master"
   # sha256 :no_check
 
-  # bottle :unneeded
-  # depends_on "automake" => :build
-  # depends_on "autoconf" => :build
-  # depends_on "ncurses"
-
+  bottle :unneeded
+  depends_on "ncurses"
   depends_on :python
   depends_on "tor"
 
@@ -20,7 +17,7 @@ class Nyx < Formula
 
   def install
     libexec.install Dir["*"]
-    bin.write_exec_script libexec/"nyx"
+    #bin.write_exec_script libexec/"run_nyx"
   end
 
   def caveats; <<-EOS.undent

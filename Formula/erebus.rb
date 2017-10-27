@@ -1,10 +1,11 @@
 class Erebus < Formula
   desc "Tor Relay Dashboard"
   homepage "https://erebus.github.io"
-  # url "https://git.torproject.org/erebus.gitt", :branch => "master"
+  # url "https://git.torproject.org/erebus.git", :branch => "master"
   head "https://github.com/erebus/erebus.git", :branch => "master"
   # sha256 :no_check
 
+  bottle :unneeded
   depends_on :python
   depends_on "tor"
 
@@ -14,9 +15,9 @@ class Erebus < Formula
   end
 
   resource "cyclone" do
-      url "https://pypi.python.org/packages/4c/dd/4ffe2be7df5aceb7e5ce1f1e6b2cd04d294eb30c323f35a06f199072a259/cyclone-1.1.tar.gz"
-      sha256 "9b8af0c2a5d68b2b89087c2024cbf0e26b09265de3cb959afd3da04ab53b50d5"
-    end
+    url "https://pypi.python.org/packages/4c/dd/4ffe2be7df5aceb7e5ce1f1e6b2cd04d294eb30c323f35a06f199072a259/cyclone-1.1.tar.gz"
+    sha256 "9b8af0c2a5d68b2b89087c2024cbf0e26b09265de3cb959afd3da04ab53b50d5"
+  end
 
   def install
     libexec.install Dir["*"]
@@ -33,6 +34,6 @@ class Erebus < Formula
     $python run_erebus.py
     [INFO] Erebus is running on port 8887 with dual mode.
     [INFO] Erebus server is located at http://127.0.0.1:8887
-
+    EOS
   end
 end
