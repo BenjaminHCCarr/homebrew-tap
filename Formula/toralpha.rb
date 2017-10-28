@@ -3,7 +3,7 @@ class Toralpha < Formula
   homepage "https://www.torproject.org/"
   url "https://tor.eff.org/dist/tor-0.3.2.3-alpha.tar.gz"
   mirror "https://dist.torproject.org/tor-0.3.2.3-alpha.tar.gz"
-  sha256 :no_check
+  sha256 "1440a4bf6d52cb9831991af6ae7a0fc1c152af59108c9dff6b036e70e3641d19"
 
   bottle :unneeded
 
