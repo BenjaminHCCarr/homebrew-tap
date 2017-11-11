@@ -15,14 +15,14 @@ class Toralpha < Formula
   conflicts_with "tor"
 
   def install
-    args = "
-             --disable-dependency-tracking
-             --disable-silent-rules
-             --prefix=#{prefix}
-             --sysconfdir=#{etc}
-             --localstatedir=#{var}
-             --with-openssl-dir=#{Formula["openssl"].opt_prefix}
-           "
+    args = %W[
+      --disable-dependency-tracking
+      --disable-silent-rules
+      --prefix=#{prefix}
+      --sysconfdir=#{etc}
+      --localstatedir=#{var}
+      --with-openssl-dir=#{Formula["openssl"].opt_prefix}
+    ]
 
     system "./configure", *args
     system "make", "install"
@@ -58,9 +58,9 @@ class Toralpha < Formula
 
   test do
     pipe_output("script -q /dev/null #{bin}/tor-gencert --create-identity-key", "passwd\npasswd\n")
-    assert_predicate testpath / "authority_certificate", :exist?
-    assert_predicate testpath / "authority_signing_key", :exist?
-    assert_predicate testpath / "authority_identity_key", :exist?
+    assert_predicate testpath/"authority_certificate", :exist?
+    assert_predicate testpath/"authority_signing_key", :exist?
+    assert_predicate testpath/"authority_identity_key", :exist?
   end
 
   def caveats; <<-EOS.undent
