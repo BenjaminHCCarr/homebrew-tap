@@ -4,7 +4,6 @@ class Gpredict < Formula
   url "https://downloads.sourceforge.net/project/gpredict/Gpredict/2.0/gpredict-2.0.tar.gz"
   sha256 "508f882383eac326aecb0b058378fc71f13b431c581e0efc28ee3c4216c76e16"
 
-  # depends_on :x11
   depends_on "pkg-config" => :build
   depends_on "intltool" => :build
   depends_on "gettext"
