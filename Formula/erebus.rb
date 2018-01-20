@@ -6,7 +6,7 @@ class Erebus < Formula
   # sha256 :no_check
 
   bottle :unneeded
-  depends_on :python
+  depends_on "python"
   depends_on "tor"
 
   resource "stem" do

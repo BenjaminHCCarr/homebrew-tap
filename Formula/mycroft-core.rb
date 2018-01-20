@@ -50,10 +50,10 @@ class MycroftCore < Formula
     sha256 "07410e7fb09aab7bdaf5e618de66c3dac84e2e3d628352814dc4c37de321d6ae"
   end
 
-  resource "PyAudio" do
-    url "https://pypi.python.org/packages/94/3e/430d4e4e24e89b19c1df052644f69e03d64c1ae2e83f5a14bd365e0236de/PyAudio-0.2.11-cp27-cp27m-win_amd64.whl"
-    sha256 "259bb9c1363be895b4f9a97e320a6017dd06bc540728c1a04eb4a7b6fe75035b"
-  end
+  # resource "PyAudio" do
+  #   url "https://pypi.python.org/packages/94/3e/430d4e4e24e89b19c1df052644f69e03d64c1ae2e83f5a14bd365e0236de/PyAudio-0.2.11-cp27-cp27m-win_amd64.whl"
+  #   sha256 "259bb9c1363be895b4f9a97e320a6017dd06bc540728c1a04eb4a7b6fe75035b"
+  # end
 
   resource "pyee" do
     url "https://pypi.python.org/packages/0b/94/6820b8b1a21ce4d6a1c807342ac35cf4d5fd89b94b3f12e10de3c34d5507/pyee-1.0.1.tar.gz"
@@ -85,10 +85,10 @@ class MycroftCore < Formula
     sha256 "2fe2342bb4fe8b8e217f0d21b5921cbe5408bf966d9f92025e707e881b198bed"
   end
 
-  resource "future" do
-    url "https://pypi.python.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz"
-    sha256 "e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb"
-  end
+  # resource "future" do
+  #   url "https://pypi.python.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz"
+  #   sha256 "e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb"
+  # end
 
   resource "requests-futures" do
     url "https://pypi.python.org/packages/25/43/bf8e46a309b5bb08f9d7813473ddb5f27a40d194ddf120fa4f193aa764e3/requests-futures-0.9.5.tar.gz"
@@ -105,29 +105,29 @@ class MycroftCore < Formula
     sha256 "c36c938a872e5ff494938b33b14aaa156cb439ec67548fcab3535bb78b0846e8"
   end
 
-  resource "pyalsaaudio" do
-    url "https://pypi.python.org/packages/0d/99/1f48912b5ffccecdd0c0c477023f4eaf45ebac6c92bc1865c7142c570d6d/pyalsaaudio-0.8.2.tar.gz"
-    sha256 "b6df486f1c4035041a5f3800496b86c64e48e4a7d47f94dcbca11b0187aa3a15"
-  end
+  # resource "pyalsaaudio" do
+  #   url "https://pypi.python.org/packages/0d/99/1f48912b5ffccecdd0c0c477023f4eaf45ebac6c92bc1865c7142c570d6d/pyalsaaudio-0.8.2.tar.gz"
+  #   sha256 "b6df486f1c4035041a5f3800496b86c64e48e4a7d47f94dcbca11b0187aa3a15"
+  # end
 
   resource "xmlrunner" do
     url "https://pypi.python.org/packages/57/c0/a19e29bc6038a56bb690549573af6ea11a9d2a5c07aff2e27ed308c2cab9/xmlrunner-1.7.7.tar.gz"
     sha256 "5a6113d049eca7646111ee657266966e5bbfb0b5ceb2e83ee0772e16d7110f39"
   end
 
-  resource "pyserial" do
-    url "https://pypi.python.org/packages/69/89/24fc8c26e23710a0d8fdf9e8134b28ceeab421d3f3e0165ceca6bdb98193/pyserial-3.0.tar.gz"
-    sha256 "056c2d96c83c009d8d04aad43a90f91f10f6a97d42c0d9656c2655c63fb8ff07"
-  end
+  # resource "pyserial" do
+  #   url "https://pypi.python.org/packages/69/89/24fc8c26e23710a0d8fdf9e8134b28ceeab421d3f3e0165ceca6bdb98193/pyserial-3.0.tar.gz"
+  #   sha256 "056c2d96c83c009d8d04aad43a90f91f10f6a97d42c0d9656c2655c63fb8ff07"
+  # end
 
   resource "psutil" do
-    url "https://pypi.python.org/packages/4c/03/fffda9f6e1ca56ce989362969b709bf7a7ade16abf7d82661bbec96580f5/psutil-5.2.1-cp27-none-win_amd64.whl"
-    sha256 "e88fe0d0ca5a9623f0d8d6be05a82e33984f27b067f08806bf8a548ba4361b40"
+    url "https://pypi.python.org/packages/e2/e1/600326635f97fee89bf8426fef14c5c29f4849c79f68fd79f433d8c1bd96/psutil-5.4.3.tar.gz"
+    sha256 "e2467e9312c2fa191687b89ff4bc2ad8843be4af6fb4dc95a7cc5f7d7a327b18"
   end
 
   resource "pocketsphinx" do
-    url "https://pypi.python.org/packages/86/71/442d44face1349cd4b71aab9ba8a786e64708d617126ca262702da3d04c7/pocketsphinx-0.1.0-cp27-cp27m-win_amd64.whl"
-    sha256 "1fae2207ff840ac89b7cb87798608dd716979f147986b42ab697aa48910baaa3"
+    url "https://pypi.python.org/packages/a0/4e/70c500da7558d2a8e67fd8cfd33f5a4b90faf7163d7e4023fa989a89902a/pocketsphinx-0.1.3.tar.gz"
+    sha256 "ac125aadefc85ab78706a4d18ae66c3dcf89eb9e2a0cbd88c7a6086df420346d"
   end
 
   resource "inflection" do
@@ -135,10 +135,15 @@ class MycroftCore < Formula
     sha256 "18ea7fb7a7d152853386523def08736aa8c32636b047ade55f7578c4edeb16ca"
   end
 
-  resource "pillow" do
-    url "https://pypi.python.org/packages/02/62/0c7b4f876f2f76b4ab6d2f93fb76cee872fe4d45fbee3d79501bbe9e3015/Pillow-4.1.1-cp27-cp27m-manylinux1_i686.whl"
-    sha256 "f63404731fa5fa0c21d00af119b867e30208e3fc148c9b13fb6a541a8df203b2"
-  end
+  #Neither version builds
+  # resource "pillow" do
+  #   url "https://pypi.python.org/packages/93/73/66854f63b1941aad9af18a1de59f9cf95ad1a87c801540222e332f6688d7/Pillow-4.1.1.tar.gz"
+  #   sha256 "00b6a5f28d00f720235a937ebc2f50f4292a5c7e2d6ab9a8b26153b625c4f431"
+  # end
+  # resource "pillow" do
+  #   url "https://pypi.python.org/packages/0f/57/25be1a4c2d487942c3ed360f6eee7f41c5b9196a09ca71c54d1a33c968d9/Pillow-5.0.0.tar.gz"
+  #   sha256 "12f29d6c23424f704c66b5b68c02fe0b571504459605cfe36ab8158359b0e1bb"
+  # end
 
   resource "python-dateutil" do
     url "https://pypi.python.org/packages/51/fc/39a3fbde6864942e8bb24c93663734b74e281b984d1b8c4f95d64b0c21f6/python-dateutil-2.6.0.tar.gz"
@@ -165,10 +170,33 @@ class MycroftCore < Formula
     sha256 "bb1f27740f6596f8272a2e1033d93d68e27e8ed5d22d6ab957e3f1d3f8ce05f6"
   end
 
-  resource "padatious" do
-    url "https://pypi.python.org/packages/a1/fd/bfe9d774efb269eac603230243a1df46e5c275915df4262213c56c0b0138/padatious-0.3.7.tar.gz"
-    sha256 "947f586ff699c22f210afc28492dd584fb592e31acc1e0b9e874b98ddc242c98"
+  resource "monotonic" do
+    url "https://pypi.python.org/packages/14/73/04da85fc1bacfa94361f00205a464b7f1ed23bfe8de3511cbff0fa2eeda7/monotonic-1.4.tar.gz"
+    sha256 "a02611d5b518cd4051bf22d21bd0ae55b3a03f2d2993a19b6c90d9d168691f84"
   end
+
+  # resource "faan2" do
+  #   url "https://pypi.python.org/packages/80/a1/fed455d25c34a62d4625254880f052502a49461a5dd1b80854387ae2b25f/fann2-1.1.2.tar.gz"
+  #   sha256 "cdca0a65ad48e08320672affe38c3dd4ea15e27821e5e1db9fa2b34299bdd41e"
+  # end
+  # resource "faan2" do
+  #   url "https://pypi.python.org/packages/a9/a3/af368a683a04850aa1bf2e097f17781eb26e7e7c269ddcecfcec5f2e05a3/fann2-1.0.7.tar.gz"
+  #   sha256 "53eca74a2c0a0dfcf2d8e449cf487603886dadeda343adab4c0f1b811734fb9f"
+  # end
+
+  resource "xxhash" do
+    url "https://pypi.python.org/packages/06/2d/59697bd6d2e8b277a39a916fcdd17246bd25eeceb107534fe50e128f6e59/xxhash-1.0.1.zip"
+    sha256 "7abe69c9d02374385e23d0e7d6279d5fa03899989d25b381d837fa46cf294831"
+  end
+
+  # resource "padatious" do
+  #   url "https://pypi.python.org/packages/a1/fd/bfe9d774efb269eac603230243a1df46e5c275915df4262213c56c0b0138/padatious-0.3.7.tar.gz"
+  #   sha256 "947f586ff699c22f210afc28492dd584fb592e31acc1e0b9e874b98ddc242c98"
+  # end
+  # resource "padatious" do
+  #   url "https://pypi.python.org/packages/15/56/9c3d67844d9374198830b33661df47426508951331f92a00b55dfcbb63ad/padatious-0.3.8.tar.gz"
+  #   sha256 "d832190e2c945c2a580290e7465e91ceba793ca72eb4d066ef871bc7aae460ae"
+  # end
 
   def install
     system "cp", "mycroft-base-setup.py", "setup.py"
