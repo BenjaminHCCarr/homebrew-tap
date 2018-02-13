@@ -1,9 +1,9 @@
 class Toralpha < Formula
   desc "Anonymizing overlay network for TCP"
   homepage "https://www.torproject.org/"
-  url "https://tor.eff.org/dist/tor-0.3.2.7-rc.tar.gz"
-  mirror "https://dist.torproject.org/tor-0.3.2.7-rc.tar.gz"
-  sha256 "4be673a5084790977d692e11afe5ca575adb08f06809dbac52d8b005435131fb"
+  url "https://tor.eff.org/dist/tor-0.3.3.2-alpha.tar.gz"
+  mirror "https://dist.torproject.org/tor-0.3.3.2-alpha.tar.gz"
+  sha256 "381135a59f4ca48a1eaeaaf2a94eb27ba61c73c196030e481d868e8f0d94beb4"
 
   bottle :unneeded
 
@@ -26,6 +26,11 @@ class Toralpha < Formula
 
     system "./configure", *args
     system "make", "install"
+  end
+
+  def caveats; <<-EOS.undent
+    This is tracking -alpha, you should not use this if you don't know what you are doing with Tor. This is to help the Tor team test new features like scheduling.
+    EOS
   end
 
   plist_options :manual => "tor"
@@ -61,10 +66,5 @@ class Toralpha < Formula
     assert_predicate testpath/"authority_certificate", :exist?
     assert_predicate testpath/"authority_signing_key", :exist?
     assert_predicate testpath/"authority_identity_key", :exist?
-  end
-
-  def caveats; <<-EOS.undent
-    This is tracking -alpha, you should not use this if you don't know what you are doing with Tor. This is to help the Tor team test new features like scheduling.
-    EOS
   end
 end
