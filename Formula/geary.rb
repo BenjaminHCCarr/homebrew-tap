@@ -10,11 +10,11 @@ class Geary < Formula
   depends_on "pkg-config" => :build
   depends_on "desktop-file-utils"
   depends_on "enchant"
+  depends_on "gcr"
   depends_on "glib"
   depends_on "gmime"
   depends_on "gnome-doc-utils"
   depends_on "gobject-introspection"
-  depends_on "grc"
   depends_on "gtk+3"
   depends_on "libcanberra"
   depends_on "libgee"
