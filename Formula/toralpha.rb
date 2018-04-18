@@ -1,9 +1,9 @@
 class Toralpha < Formula
   desc "Anonymizing overlay network for TCP"
   homepage "https://www.torproject.org/"
-  url "https://tor.eff.org/dist/tor-0.3.3.4-alpha.tar.gz"
-  mirror "https://dist.torproject.org/tor-0.3.3.4-alpha.tar.gz"
-  sha256 "07b1dd0189a9b03534f1cc18939283de2d5c6ff45a3da214c3637bce14b36f87"
+  url "https://tor.eff.org/dist/tor-0.3.3.5-rc.tar.gz"
+  mirror "https://dist.torproject.org/tor-0.3.3.5-rc.tar.gz"
+  sha256 "236247c1f58e3e4ddc29c06d2d6693ab20bb5bdf899ed9efffa955353d092629"
 
   bottle :unneeded
 
@@ -28,14 +28,14 @@ class Toralpha < Formula
     system "make", "install"
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     This is tracking -alpha, you should not use this if you don't know what you are doing with Tor. This is to help the Tor team test new features like scheduling.
     EOS
   end
 
   plist_options :manual => "tor"
 
-  def plist; <<-EOS.undent
+  def plist; <<-EOS
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
