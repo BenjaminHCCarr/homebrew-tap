@@ -1,9 +1,9 @@
 class Toralpha < Formula
   desc "Anonymizing overlay network for TCP"
   homepage "https://www.torproject.org/"
-  url "https://tor.eff.org/dist/tor-0.3.4.4-rc.tar.gz"
-  mirror "https://dist.torproject.org/tor-0.3.4.4-rc.tar.gz"
-  sha256 "d9f556e3213e12bd989666da778c043d4c78b448290fcccee0f7590c08b9505f"
+  url "https://tor.eff.org/dist/tor-0.3.4.7-rc.tar.gz"
+  mirror "https://dist.torproject.org/tor-0.3.4.7-rc.tar.gz"
+  sha256 "d64d096983622cf44a9d557dd02e801c035a295e8d3f5d6d565cedd3f156e565"
 
   bottle :unneeded
 
@@ -30,7 +30,7 @@ class Toralpha < Formula
 
   def caveats; <<~EOS
     This is tracking -alpha, you should not use this if you don't know what you are doing with Tor. This is to help the Tor team test new features like scheduling.
-    EOS
+  EOS
   end
 
   plist_options :manual => "tor"
@@ -58,7 +58,7 @@ class Toralpha < Formula
         <string>#{var}/log/tor.log</string>
       </dict>
     </plist>
-    EOS
+  EOS
   end
 
   test do
