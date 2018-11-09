@@ -1,16 +1,16 @@
 class Toralpha < Formula
   desc "Anonymizing overlay network for TCP"
   homepage "https://www.torproject.org/"
-  url "https://tor.eff.org/dist/tor-0.3.5.3-alpha.tar.gz"
-  mirror "https://dist.torproject.org/tor-0.3.5.3-alpha.tar.gz"
-  sha256 "b5889b17062a20c1d28b5ddf8872818584a2ff1a5ebaeb37493f7699e3c37db4"
+  url "https://tor.eff.org/dist/tor-0.3.5.4-alpha.tar.gz"
+  mirror "https://dist.torproject.org/tor-0.3.5.4-alpha.tar.gz"
+  sha256 "0f026b5f5a11ce67efd5e2cad091f8538bc8c895ad4b4404737d0418c5434078"
 
   bottle :unneeded
 
   depends_on "pkg-config" => :build
   depends_on "libevent"
-  depends_on "openssl"
   depends_on "libscrypt"
+  depends_on "openssl"
 
   conflicts_with "tor"
 
