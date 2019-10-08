@@ -1,9 +1,9 @@
 class Toralpha < Formula
   desc "Anonymizing overlay network for TCP"
   homepage "https://www.torproject.org/"
-  url "https://tor.eff.org/dist/tor-0.4.2.1-alpha.tar.gz"
-  mirror "https://dist.torproject.org/tor-0.4.2.1-alpha.tar.gz"
-  sha256 "ef71a32d588ca348fe0f74ba7c0368474c2c53ca201bf258b2c5139a1504ba47"
+  url "https://tor.eff.org/dist/tor-0.4.2.2-alpha.tar.gz"
+  mirror "https://dist.torproject.org/tor-0.4.2.2-alpha.tar.gz"
+  sha256 "81db998b9a81fd0900965e1196cf17b7f58abe07f8931f558a8d8b9afbd59284"
 
   bottle :unneeded
 
