@@ -6,8 +6,6 @@ class Toralpha < Formula
   mirror "https://dist.torproject.org/tor-0.4.6.1-alpha.tar.gz"
   sha256 "b8c271a2644741c2b21a41e1987c6010a03b7909c717f732dd454982ffe051f0"
 
-  bottle :unneeded
-
   depends_on "pkg-config" => :build
   depends_on "libevent"
   depends_on "libscrypt"
